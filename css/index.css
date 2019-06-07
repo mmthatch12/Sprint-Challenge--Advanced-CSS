@@ -171,6 +171,33 @@ nav h1 {
   color: #23293B;
   font-size: 4rem;
   padding-bottom: 2rem;
+  -webkit-animation: fade-in 0.5s linear infinite alternate;
+  -moz-animation: fade-in 0.5s linear infinite alternate;
+  animation: fade-in 0.5s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 500px) {
   nav h1 {

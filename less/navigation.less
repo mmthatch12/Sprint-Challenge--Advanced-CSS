@@ -7,6 +7,12 @@ nav {
         color: @headcolor;
         font-size: 4rem;
         padding-bottom: 2rem;
+        .keyframes(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+    
+        .animation(fade-in 0.5s linear infinite alternate);
         @media @phone {
             padding-top: 2rem;
         }
