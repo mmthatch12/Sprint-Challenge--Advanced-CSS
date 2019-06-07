@@ -4,6 +4,12 @@
 
   .intro {
 
+    @media @phone {
+      img {
+        height: 12.3rem;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -11,7 +17,8 @@
     p {
       padding:0 15px;
     }
-  
+
+ 
   }
 
   .space-images {
@@ -59,6 +66,10 @@
 
       .btn {
         .buttparmix(@btn-bg-color, white, center);
+      }
+      .btn:hover {
+        background: white;
+        color: @btn-bg-color;
       }
     }
 

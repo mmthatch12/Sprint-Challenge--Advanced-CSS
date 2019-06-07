@@ -172,6 +172,11 @@ nav h1 {
   font-size: 4rem;
   padding-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  nav h1 {
+    padding-top: 2rem;
+  }
+}
 nav .anav {
   display: flex;
   justify-content: center;
@@ -192,6 +197,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    height: 12.3rem;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -245,6 +255,10 @@ footer {
   background: #22283A;
   color: white;
   text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
