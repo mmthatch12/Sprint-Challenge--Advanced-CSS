@@ -1,1 +1,38 @@
 // Mixins Here
+
+// Nav display 
+.navdis() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anavdis() {
+    display: flex;
+    justify-content: center;
+}
+
+.buttparmix(@backg, @color, @textal) {
+    height: 3.5rem;
+    width: 10rem;
+    font-family: @pfam;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    padding-top: .77rem;
+    background: @backg;
+    color: @color;
+    text-align: @textal;
+}
+
+// Animation
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
